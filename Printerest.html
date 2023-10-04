@@ -35,13 +35,13 @@
 <body>
     <header>
         <nav class="main-nav ">
-            <div lass="nav-list-right">
-                <div class="img-logo">
+            <ul lass="nav-list-right">
+                <li class="img-logo">
                     <img src="#" alt="">
-                </div>
-                <div>
+                </li>
+                <li>
                     <p>Pinterest</p>
-                </div>
+                </li>
                 <div>
                     <ul class="nav-list-left">
                         <li><a href="#" target="_blank">info</a></li>
@@ -52,117 +52,119 @@
                         <li><button class="nav-btn"><a href="#" target="_blank">registrarse</a></button></li>
                     </ul>
                 </div>
-            </div>
+            </ul>
         </nav>
     </header>
 
-    <!-- tiene 3 article -->
+    <!--  -->
     <article>
         <h2>encuentra la próxima</h2>
         <!-- este texto tiene un script que va asociado a la galeria y a los botones del carrousel -->
         <h2 class="text-carrousel">texto alternativo </h2>
         <section class="carrousel">
-            <div>
-                <div>
-                    <div>img1<img src="#" alt="img1"></div>
-                </div>
-                <div>
-                    <div>img2<img src="#" alt="img2"></div>
-                </div>
-                <div>
-                    <div>img3<img src="#" alt="img3"></div>
-                </div>
-                <div>
-                    <div>
+            <ul>
+                <!-- estos article con su clase "img-carrousel" lo he puesto para encapsular las imagenes, para estilarlo con object-fit -->
+                <li>
+                    <article class="img-carrousel">img1<img src="#" alt="img1"></article>
+                </li>
+                <li>
+                    <article class="img-carrousel">img2<img src="#" alt="img2"></article>
+                </li>
+                <li>
+                    <article class="img-carrousel">img3<img src="#" alt="img3"></article>
+                </li>
+                <li>
+                    <article>
                         <button class="btn-carrousel"><a href="#">⚪️</a></button>
                         <button class="btn-carrousel"><a href="#">⚪️</a></button>
                         <button class="btn-carrousel"><a href="#">⚪️</a></button>
                         <button class="btn-carrousel"><a href="#">⚪️</a></button>
-                        <div>img4<img src="#" alt="img4"></div>
-                    </div>
-                </div>
-                <div>
-                    <div>img5<img src="#" alt="img5"></div>
-                </div>
-                <div>
-                    <div>img6<img src="#" alt="img6"></div>
-                </div>
-                <div>
-                    <div>img7<img src="#" alt="img7"></div>
-                </div>
-            </div>
+                        <article class="img-carrousel">img4<img src="#" alt="img4"></article>
+                    </article>
+                </li>
+                <li>
+                    <article class="img-carrousel">img5<img src="#" alt="img5"></article>
+                </li>
+                <li>
+                    <article class="img-carrousel">img6<img src="#" alt="img6"></article>
+                </li>
+                <li>
+                    <article class="img-carrousel">img7<img src="#" alt="img7"></article>
+                </li>
+            </ul>
         </section>
     </article>
     <article>
         <section class="first-section">
-            <div class="card">
+            <ul class="card">
 
-                <!-- aqui meto las imagenes todas dentro de un div, esos div tienen diferentes clases en las que juego con el z-index
+                <!-- aqui meto las imagenes todas dentro de un article, esos article tienen diferentes clases en las que juego con el z-index
                 para su profundidad y asi las superpongos ademas del display flex le voy dando las posiciones correspondientes -->
-                <div>
-                    <div><img src="#" alt="img"></div>
+                <li>
+                    <article class="input-search-card"><img src="#" alt="img"></article>
                     <input type="text" id="search-slider" name="search" value="texto" />
-                </div>
-                <div class="img1-card">
+                </li>
+                <article class="img1-card">
                     <a href="https://www.google.com/">
                         <img src="#" alt="img1-car">
                     </a>
-                </div>
-                <div class="img2-card">
+                </article>
+                <article class="img2-card">
                     <a href="https://www.google.com/">
                         <img src="#" alt="img2-car">
                     </a>
-                </div>
-                <div class="img3-card">
+                </article>
+                <article class="img3-card">
                     <a href="https://www.google.com/">
                         <img src="#" alt="img3-car">
                     </a>
-                </div>
-                <div class="img4-card">
+                </article>
+                <article class="img4-card">
                     <a href="https://www.google.com/">
                         <img src="#" alt="img4-car">
                     </a>
-                </div>
+                </article>
 
-            </div>
+            </ul>
 
-            <div>
+            <article class="description-card">
                 <h3><a href="#">texto informativo</a></h3>
                 <p><a href="#">descripcion</a></p>
                 <button><a href="#">💀</a></button>
-            </div>
+            </article>
 
         </section>
     </article>
     <!-- en esta seccion le cambio mediante css el orden siendo pares o impares-->
     <article>
         <section class="second-section">
-            <div class="card">
-                <!-- aqui meto las imagenes todas dentro de un div, esos div tienen diferentes clases en las que juego con el z-index
+            <ul class="card">
+                <!-- aqui meto las imagenes todas dentro de un a salvo la primera que tiene un article que es el que encapsula la 
+                imagen principal, todos los li tienen diferentes clases en las que juego con el z-index
                 para su profundidad y asi las superpongos ademas del display flex le voy dando las posiciones correspondientes-->
-                <div>
-                    <div><img src="#" alt="#"></div>
+                <li>
+                    <article><img src="#" alt="#"></article>
                     <input type="text" id="search-slider" name="search" value="texto" />
-                </div>
-                <div class="img1-card">
+                </li>
+                <li class="img1-card">
                     <a href="#"><img src="#" alt="#"></a>
-                </div>
-                <div class="img2-card">
+                </li>
+                <li class="img2-card">
                     <a href="#"><img src="#" alt="#"></a>
-                </div>
-                <div class="img3-card">
+                </li>
+                <li class="img3-card">
                     <a href="#"><img src="#" alt="#"></a>
-                </div>
-                <div class="img4-card">
+                </li>
+                <li class="img4-card">
                     <a href="#"><img src="#" alt="#"></a>
-                </div>
-            </div>
+                </li>
+            </ul>
 
-            <div>
+            <article class="description-card">
                 <h3><a href="#">texto informativo</a></h3>
                 <p><a href="#">descripcion</a></p>
                 <button><a href="#">💀</a></button>
-            </div>
+            </article>
 
         </section>
     </article>
@@ -170,39 +172,39 @@
 
     <article>
         <section class="third-section">
-            <div class="card">
-                <!-- aqui meto las imagenes todas dentro de un div, esos div tienen diferentes clases en las que juego con el z-index
+            <ul class="card">
+                <!-- aqui meto las imagenes todas dentro de un article, esos article tienen diferentes clases en las que juego con el z-index
                 para su profundidad y asi las superpongos, ademas del display flex le voy dando las posiciones correspondientes -->
-                <!-- aqui la pagina oficial tiene un a en todo el div padre card -->
-                <div>
-                    <div><a href="#"><img src="#" alt="#"></a></div>
+                <!-- aqui la pagina oficial tiene un a en todo el article padre card -->
+                <li>
+                    <article><a href="#"><img src="#" alt="#"></a></article>
 
-                </div>
-                <div>
-                    <div class="img1-card"><a href="#"><img src="#" alt="#"></a></div>
+                </li>
+                <li>
+                    <article class="img1-card"><a href="#"><img src="#" alt="#"></a></article>
                     <h5><a href="#">descripcion</a></h5>
                     <p><a href="#">213454</a></p>
                     <p><a href="#">seguidores</a></p>
-                    <div class="img2-card"><a href="#"><img src="#" alt="#"></a></div>
-                </div>
-            </div>
+                    <article class="img2-card"><a href="#"><img src="#" alt="#"></a></article>
+                </li>
+            </ul>
 
-            <div>
+            <article class="description-card">
                 <h3><a href="#">texto informativo</a></h3>
                 <p><a href="#">descripcion</a></p>
                 <button><a href="#">💀</a></button>
-            </div>
+            </article>
 
         </section>
         <section class="fourth-section">
-            <div class="card-form">
+            <ul class="card-form">
                 <!-- con display flex le voy dando las posiciones correspondientes -->
-                <div>
-                    <!-- En esta imagen la pongo a maxima tamaño del div padre que tiene la clase card-form -->
-                    <div><a href="#"><img src="#" alt="#"></a></div>
-                </div>
-                <div>
-                    <div>
+                <li>
+                    <!-- En esta imagen la pongo a maxima tamaño del ul con su clase "card-form" -->
+                    <article><a href="#"><img src="#" alt="#"></a></article>
+                </li>
+                <li>
+                    <form>
                         <p>mail</p>
                         <input type="email">
                         <p>contraseña</p>
@@ -210,13 +212,13 @@
                         <p>Fechas de nacimiento</p>
                         <input type="date" name="bithday" id="bithday">
 
-                    </div>
+                    </form>
                     <button><a href="#">continuar</a></button>
                     <p>o</p>
                     <button><a href="#">continuar con facebook</a></button>
                     <button><a href="#">continuar con google</a></button>
-                </div>
-                <div class="Text-form">
+                </li>
+                <li class="Text-form">
                     <!-- mediante css el siguiente texto tendrá un tamaño de letra menor que el resto -->
                     <p>Si continuas, aceptas los <b><a href="#">Términos del servicio</a></b> de Pinterest y confirmas
                         que has leído
@@ -224,12 +226,12 @@
                     <p><b><a href="#">Aviso de recopilacion de datos.</a></b></p>
 
                     <p>¿Ya eres miembro? <b><a href="#">Iniciar sesión</a></b></p>
-                </div>
-                <div>
+                </li>
+                <li>
                     <p><b><a href="#">Crear una cuenta para empresas gratuita</a></b></p>
-                </div>
+                </li>
 
-            </div>
+            </ul>
 
         </section>
 
